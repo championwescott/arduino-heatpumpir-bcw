@@ -108,6 +108,8 @@ void AUXHeatpumpIR::sendAUX(IRSender& IR, uint8_t powerMode, uint8_t operatingMo
   // Set the horizontal air direction on the template message
   AUXTemplate[2] |= swingH;
 
+  AUXTemplate[3] |= 0x01;
+
   // Calculate the checksum
   for (uint8_t i = 0; i < 12; i++) {
     checksum += AUXTemplate[i];
