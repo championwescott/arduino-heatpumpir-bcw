@@ -27,9 +27,9 @@
 #define AUX_AIRCON1_FAN2        0x40
 #define AUX_AIRCON1_FAN3        0x20
 #define AUX_AIRCON1_VDIR_MANUAL 0x00 // Air direction modes
-#define AUX_AIRCON1_VDIR_SWING  0x07
+#define AUX_AIRCON1_VDIR_SWING  0xE0
 #define AUX_AIRCON1_HDIR_MANUAL 0x00
-#define AUX_AIRCON1_HDIR_SWING  0xE0
+#define AUX_AIRCON1_HDIR_SWING  0x07
 
 
 class AUXHeatpumpIR : public HeatpumpIR
